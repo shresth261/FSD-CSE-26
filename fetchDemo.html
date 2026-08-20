@@ -37,8 +37,9 @@
                                  <td><img src="${i.images[0]}" width="100" height="100" alt="image"></td>
                                  <td>${i.category}</td>
                                 <td>${i.rating}</td>
-                                <td>$${i.price}</td>
+                                <td>$${(i.price * rate).toFixed(2)}</td>
                                 <td>${i.stock}</td>
+                                <td> <button> add to cart</button> </td>
                     `
                 ))
                 const el= document.getElementById("data");
@@ -47,8 +48,23 @@
             catch (err) {
                 console.log("Error: ", err);
             }
-
         }
+            async    function getRate (){
+                const URL = "https://open.er-api.com/v6/latest/USD";
+                try{
+                    const res = await fetch(URL);
+                    const rateData = await res.json();
+                    console.log(rateData.rates.INR);
+                    return rateData.rates.INR;
+                }
+                catch(err){
+                    console.log("Error: ", err);
+                }
+            }
+        const test = async () => {
+        rate = await getRate();
+        }
+        test();
         loadProduct();
     </script>
 
@@ -61,10 +77,12 @@
         <tr>
             <th>Sr.No</th>
             <th>Title</th>
+            <th>Image</th>
             <th>Category</th>
             <th>Rating</th>
             <th>Price</th>
             <th>Stock</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody id="data">
