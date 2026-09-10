@@ -1,9 +1,11 @@
+
+
 const Footer = () => {
   return (
     <div className="footer">
-      <p>&copy; 2024 Shopping App. All rights are not reserved.</p>
+    <h3>Design and Developed By Ashish Bajpai &copy;2026</h3>  
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

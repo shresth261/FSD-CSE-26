@@ -1,33 +1,33 @@
-.items {
-  width: 250px;
-  padding: 20px;
-  background-color: white;
-  color: black;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+.card{
+    width: 400px;
+    height: 400px;
+    background-color: bisque;
+    border: 2px solid rgb(40, 255, 51);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
-.items img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
+.card img{
+    margin:10px;
+    padding: 10px;
 }
-
-.items h3 {
-  margin: 10px 0;
+.card h2{
+     margin: 5px;
+    padding: 5px;
+    color: rgb(0, 0, 0);
 }
-
-.items p {
-  margin: 8px 0;
+.card h3{
+     margin: 5px;
+    padding: 5px;
+    color: purple;
 }
-
-.items button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: black;
-  color: white;
-  cursor: pointer;
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
 }
