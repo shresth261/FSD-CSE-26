@@ -1,0 +1,33 @@
+.items {
+  width: 250px;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.items img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.items h3 {
+  margin: 10px 0;
+}
+
+.items p {
+  margin: 8px 0;
+}
+
+.items button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}

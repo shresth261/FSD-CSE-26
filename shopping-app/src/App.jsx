@@ -1,7 +1,12 @@
-function App(){
+import UserLayout from "./pages/UserLayout";
+import "./App.css";
+
+const App = () => {
   return (
-    <div>
-      <h1>my shopping app</h1>
+    <div className="App">
+      <UserLayout />
     </div>
-  )
-}
+  );
+};
+
+export default App;
